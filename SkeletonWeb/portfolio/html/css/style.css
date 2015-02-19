@@ -33,6 +33,10 @@ h1, h2, h3, h4, h5, h6 {
 	margin-bottom: 0;
 }
 
+
+
+
+
 .portfolio {
 	margin-top: 20px;
 }
@@ -98,6 +102,41 @@ h1, h2, h3, h4, h5, h6 {
 	color: #fff;
 	font.size: 0.87em;
 }
+
+
+
+
+.nav-menu {
+	display: none !important;
+}
+
+.nav-menu:checked  + label {
+	color: #fff;
+	background-color: #3a3f43;
+	border-radius: 3px;
+}
+
+.nav-menu,
+.portfolio > figure.columns {
+	display: none; 
+}
+
+#all:checked  ~ .portfolio .all,
+#illustrations:checked  ~ .portfolio .illustration,
+#posters:checked  ~ .portfolio .poster,
+#typography:checked  ~ .portfolio .typography,
+#packaging:checked  ~ .portfolio .package { 
+	display: block; 
+}
+
+label {
+	padding: 5px 10px;
+	color: #3a3f43;
+	cursor: pointer;
+	display: inline-block;	/* Labels displayed beside each other */
+}
+
+
 
 
 .sprite-twitter-hover  { background-position: 0 -96px;  width: 48px; height: 48px; }
