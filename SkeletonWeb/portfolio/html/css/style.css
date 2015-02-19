@@ -1,0 +1,39 @@
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: bold;
+}
+
+.header {
+	padding: 22px 0;
+	background-color: #3a3f43;
+	margin-bottom: 14px;
+	box-shadow: 0 1px 3px 0 rgba(0,0,0,0.3);
+	border-bottom: 1px solid #181f25;
+}
+
+.logo {
+	text-align: center;
+	border-radius: 3px;
+	background-color: #515558;
+	width: 250px;
+	padding: 5px 0;
+	margin: 0 auto;
+}
+
+.logo h1 {
+	color: #fff;
+	font-weight: normal;
+	font-family: "Alfa Slab One", Arial, sans-serif;
+	margin-bottom: 0;
+}
+
+.sprite-twitter-hover  { background-position: 0 -96px;  width: 48px; height: 48px; }
+.sprite-twitter            { background-position: 0 -240px; width: 48px; height: 48px; }
+.sprite-facebook-hover{ background-position: 0 -48px;  width: 48px; height: 48px; }
+.sprite-twitter            { background-position: 0 -192px; width: 48px; height: 48px; }
