@@ -33,6 +33,73 @@ h1, h2, h3, h4, h5, h6 {
 	margin-bottom: 0;
 }
 
+.portfolio {
+	margin-top: 20px;
+}
+
+.portfolio .four.columns {
+	width: 240px;
+	margin-right: 0;
+	margin-left: 0;
+	/* Not included in book: */
+	margin-top: 0;
+	margin-bottom: 0;	
+}
+
+.portfolio > figure {
+	position: relative;
+	overflow: hidden; /* To cut last image too big at the right, and below over the figcaption */
+}
+
+.portfolio > figure img {
+	max-width: 100%;
+	display: block; /* To remove white line below the image */
+	/* Also supposed to work: vertical-align: top; */
+}
+
+.portfolio figcaption {
+	position: absolute; /* To detach the caption from its surroundings */
+	
+	width: 100%; /* Follow figure parent */
+	height: 100%;
+	
+	left:0;	/* Parent figure has position: relative, this coords. are absolute to parent */
+	top:0;
+	
+	background-color: rgba(58,63,67,0.8);
+	
+	padding: 10%;
+	
+	-webkit-transform: translateX(100%);
+	-moz-transform: translateX(100%);
+	-ms-transform: translateX(100%);
+	-o-transform: translateX(100%);
+	transform: translateX(100%);
+	
+	-webkit-transition: all 350ms;
+	-moz-transition: all 350ms;
+	-o-transition: all 350ms;
+	transition: all 350ms;
+}
+
+.container figure:hover figcaption {
+	-webkit-transform: translateX(0);
+	-moz-transform: translateX(0);
+	-ms-transform: translateX(0);
+	-o-transform: translateX(0);
+	transform: translateX(0);	
+}
+
+.portfolio figcaption h4 {
+	color: #fff;
+}
+
+.portfolio figcaption p {
+	color: #fff;
+	font.size: 0.87em;
+}
+
+
 .sprite-twitter-hover  { background-position: 0 -96px;  width: 48px; height: 48px; }
 .sprite-twitter            { background-position: 0 -240px; width: 48px; height: 48px; }
 .sprite-facebook-hover{ background-position: 0 -48px;  width: 48px; height: 48px; }
