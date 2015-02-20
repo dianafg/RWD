@@ -139,7 +139,53 @@ label {
 
 
 
-.sprite-twitter-hover  { background-position: 0 -96px;  width: 48px; height: 48px; }
-.sprite-twitter            { background-position: 0 -240px; width: 48px; height: 48px; }
-.sprite-facebook-hover{ background-position: 0 -48px;  width: 48px; height: 48px; }
-.sprite-twitter            { background-position: 0 -192px; width: 48px; height: 48px; }
+.footer {
+	border-top: 1px solid #ccc;
+	margin-top: 28px;
+	padding: 28px 0;
+}
+
+.social {
+	float: left;
+}
+
+.social .copyright {
+	color: #ccc;
+	margin-bottom: 10px;
+	font-size: 1em;
+}
+
+.social ul li {
+	display: inline;
+}
+
+.social ul li a {
+	display: inline-block; /* In order to be able to set width and height */
+	width: 48px;
+	height: 48px;
+	
+	/* image replacement styles, to hide the text inside and replace it with a background image */
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.social-twitter a,
+.social-facebook a {
+	background-image: url('../images/icons.png');
+	background-repeat: no-repeat;
+}
+
+.social-twitter a:hover  { background-position: -144px 0; }
+.social-twitter  a            { background-position: 0 0; }
+.social-facebook a:hover { background-position: -192px 0; }
+.social-facebook  a     { background-position: -48px 0; }
+
+
+.contact {
+	float: right;
+}
+
+.contact, .contact a { 
+	color: #ccc;
+}
