@@ -208,3 +208,85 @@ label {
 .contact-email:before {
     background-position: -5px 2px;
 }
+
+
+@media only screen and (max-width: 959px) {
+	.container {
+		width: 100%;
+	}
+	.portfolio .four.columns {
+		width: 25%;	/* Four columns per row */
+		margin-bottom: 15px;
+	}
+
+	label { /* Hide nav menu, users navigate by scrolling with their fingers */
+		display: none;
+	}
+	.portfolio > figure:before { /* As nav menu is hidden, show the category info at the top of the image */
+		content: attr(data-category); /* Get the data-* attribute */
+		font-size: 1em;
+		padding: 8px;
+		width: 100%;
+		color: #fff;
+		display: block;
+		font-weight: bold;
+		text-transform: capitalize;
+		background-color: rgba(42,47,51,0.8);
+		position: absolute;
+	}
+	.portfolio figcaption {
+		position: relative;	/* Show the image caption instead of hiding it */
+		/* Remove translate effects */
+		-webkit-transform: translateX(0);
+		-moz-transform: translateX(0);
+		-ms-transform: translateX(0);
+		-o-transform: translateX(0);
+		transform: translateX(0);	
+		background-color: #3a3f43;
+	}
+	.portfolio figure:nth-child(odd) figcaption {
+		/* Set odd elements background color to a darker color with nth-child(odd) */
+		background-color: #2a2f33;
+	}
+	.footer {
+		border-top: 1px solid #ccc;
+		margin-top: 42px;
+		padding: 28px;
+	}
+}
+
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	.portfolio .four.columns {
+		width: 50%;	/* Two columns per row */
+	}
+}
+
+
+@media only screen and (max-width: 479px) {
+	.portfolio .four.columns {
+		width: 100%;	/* One column per row */
+	}
+	.footer {
+		text-align: center;
+	}
+	.contact, .social {
+		float: none;
+		display: block;
+	}
+}
+
+/* Larger than mobile */
+@media (min-width: 400px) {}
+
+/* Larger than phablet (also point when grid becomes active) */
+@media (min-width: 550px) {}
+
+/* Larger than tablet */
+@media (min-width: 750px) {}
+
+/* Larger than desktop */
+@media (min-width: 1000px) {}
+
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {}
